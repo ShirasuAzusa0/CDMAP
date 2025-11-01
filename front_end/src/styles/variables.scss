@@ -1,0 +1,56 @@
+/* 统一在 :root 层级声明全局变量，全局可用 */
+:root {
+  /* === 基础色系 === */
+  --c-primary: #F7EE12;      /* 主色：CDMAP Logo 亮黄，用于主按钮/高亮 */
+  --c-accent:  #6A119A;      /* 辅色：Logo 紫描边，主视觉线条、链接、hover */
+  --c-deep:    #401563;      /* 深紫：hover、阴影、标题强化 */
+  --c-mauve:   #94537F;      /* 紫粉过渡色，可用于背景渐变或卡片边框 */
+  --c-white:   #FFFFFF;      /* 白底 */
+  --c-gray:    #A6A7B1;      /* 中灰，用于副文字或分割线 */
+  --c-dark:    #1E1E1E;      /* 深灰，用于正文文字 */
+  --c-shadow:  rgba(0, 0, 0, 0.05);
+
+  /* === 文本与前景 === */
+  --color-text:         var(--c-dark);       /* 主文本 */
+  --color-text-muted:   #6E678A;             /* 次文本 */
+  --color-heading:      var(--c-accent);     /* 标题强调色 */
+  --color-link:         var(--c-accent);     /* 链接 */
+  --color-link-hover:   var(--c-deep);       /* 链接悬停 */
+
+  /* === 背景层级 === */
+  --color-bg:           #FCFBFF;             /* 主页面背景（微暖白） */
+  --color-bg-secondary: #F4F2FF;             /* 次级背景（浅紫） */
+  --color-panel-bg:     #FFFFFF;             /* 模块面板背景 */
+  --color-hover-bg:     rgba(247, 238, 18, 0.1); /* hover 时的黄高光 */
+
+  /* === Header 主题 === */
+  --header-bg:          var(--c-accent);     /* 紫色顶部栏 */
+  --header-text:        #FFFFFF;
+  --header-hover:       var(--c-primary);
+
+  /* === Footer 主题 === */
+  --footer-bg:          var(--c-accent);     /* 紫底 */
+  --footer-border:      #3f3f4f;
+  --footer-primary:     var(--c-primary);    /* Logo 黄 */
+  --footer-text:        #ffffff;
+  --footer-text-muted:  #c9c5d5;
+  --footer-px:          clamp(0.75rem, 1vw, 1rem);
+
+  /* === 交互状态 === */
+  --radius:     12px;
+  --focus:      0 0 0 4px rgba(106,17,154,0.12);
+  --shadow-sm:  0 1px 2px 0 var(--c-shadow);
+  --shadow-md:  0 4px 8px rgba(0,0,0,0.1);
+  --shadow-lg:  0 8px 20px rgba(0,0,0,0.15);
+
+  /* === 按钮 === */
+  --btn-primary-bg:       var(--c-primary);
+  --btn-primary-hover:    #FFF36E;
+  --btn-primary-text:     #111;
+  --btn-accent-bg:        var(--c-accent);
+  --btn-accent-hover:     var(--c-deep);
+  --btn-accent-text:      #FFF;
+
+  /* === 边框 === */
+  --color-border: var(--c-gray);
+}
