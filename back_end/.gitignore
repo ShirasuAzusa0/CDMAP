@@ -5,6 +5,10 @@ target/
 !**/src/test/**/target/
 key/
 
+### 忽略上级目录的其他项目 ###
+../dataGenerate/
+../front_end/
+
 ### STS ###
 .apt_generated
 .classpath
